@@ -1,0 +1,9 @@
+# CPU environment for scripts/03_analysis.sh (statistics, tables, linear shortcut model).
+name: mmxu_analysis
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy=2.3.3
+  - scipy=1.16.2
+  - scikit-learn=1.7.2

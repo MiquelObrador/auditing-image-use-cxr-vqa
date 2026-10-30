@@ -1,0 +1,34 @@
+# Credentialed data (PhysioNet data use agreement, MMXU terms): never commit.
+data/
+*.jsonl
+*.csv.gz
+*.zip
+
+# Everything the scripts generate from the data: predictions, boxes, reports, figures, weights.
+*/oracle_results/
+*/runs/
+tac_mcq_train/splits.json
+tac_mcq_train/libra-3b-baseassembly/
+bbox_analysis/*.csv
+bbox_analysis/*.png
+bbox_analysis/*.md
+clean_eval/*.md
+clean_eval/*.tex
+clean_eval/c518/
+shortcut_analysis/*.md
+figures/*.pdf
+data_ids/regenerated/
+third_party/
+*.log
+
+# Python / editors
+__pycache__/
+*.pyc
+.claude/
+.vscode/
+
+# Added for the October release: per-row box tables and figure outputs
+clean_eval/*.csv
+clean_eval/*.json
+figures/*.csv
+figures/*.png
